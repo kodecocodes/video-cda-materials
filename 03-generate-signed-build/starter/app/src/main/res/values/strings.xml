@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">Quotes</string>
+  <string name="hello_world">Hello world</string>
+  <string name="charmander">Charmander</string>
+  <string name="text">Text</string>
+  <string name="author">Author</string>
+  <string name="date">Date</string>
+  <string name="save">Save</string>
+</resources>

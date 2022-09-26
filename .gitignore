@@ -288,5 +288,7 @@ DerivedData/
 ## Gcc Patch
 /*.gcno
 
-*/.idea/*
-*/local.properties
+*/starter/.idea
+*/final/.idea
+*/starter/local.properties
+*/final/local.properties

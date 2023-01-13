@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest package="com.kodeco.android.quotes"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
   <application
-      android:name="com.yourcompany.android.quotes.QuoteApplication"
-      android:allowBackup="false"
+      android:name="com.kodeco.android.quotes.QuoteApplication"
       android:icon="@mipmap/ic_launcher"
       android:label="@string/app_name"
       android:roundIcon="@mipmap/ic_launcher_round"
       android:supportsRtl="true"
       android:theme="@style/AppTheme"
       tools:ignore="GoogleAppIndexingWarning">
-    <activity
-        android:name="com.yourcompany.android.quotes.ui.AddEditActivity"
-        android:parentActivityName="com.yourcompany.android.quotes.ui.MainActivity" />
+
     <!-- Main Activity -->
     <activity
-        android:name="com.yourcompany.android.quotes.ui.MainActivity"
+        android:name="com.kodeco.android.quotes.ui.MainActivity"
         android:theme="@style/SplashTheme"
         android:exported="true">
       <intent-filter>

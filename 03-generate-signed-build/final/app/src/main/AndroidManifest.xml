@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.kodeco.android.quotes"
+<manifest package="com.yourcompany.android.quotes"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
   <application
-      android:name="com.kodeco.android.quotes.QuoteApplication"
+      android:name="com.yourcompany.android.quotes.QuoteApplication"
       android:icon="@mipmap/ic_launcher"
       android:label="@string/app_name"
       android:roundIcon="@mipmap/ic_launcher_round"
@@ -14,7 +14,7 @@
 
     <!-- Main Activity -->
     <activity
-        android:name="com.kodeco.android.quotes.ui.MainActivity"
+        android:name="com.yourcompany.android.quotes.ui.MainActivity"
         android:theme="@style/SplashTheme"
         android:exported="true">
       <intent-filter>

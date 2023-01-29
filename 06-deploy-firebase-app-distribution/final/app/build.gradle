@@ -7,7 +7,7 @@ plugins {
 android {
   compileSdkVersion rootProject.ext.compileSdkVersion
   defaultConfig {
-    applicationId "com.kodeco.android.quotes"
+    applicationId "com.yourcompany.android.quotes"
     minSdkVersion rootProject.ext.minSdkVersion
     targetSdkVersion rootProject.ext.targetSdkVersion
     versionCode 9

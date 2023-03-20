@@ -37,23 +37,23 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: 11
-      - name: Generate Release AAB
-        run: ./gradlew bundleRelease
-      - name: Sign AAB
+      - name: Generate Release APK
+        run: ./gradlew assembleRelease
+      - name: Sign APK
         uses: ilharp/sign-android-release@v1
         # ID used to access action output
         id: sign_app
         with:
-          releaseDir: app/build/outputs/bundle/release
+          releaseDir: app/build/outputs/apk/release
           signingKey: ${{ secrets.SIGNING_KEY }}
-          keyAlias: ${{ secrets.ALIAS }}
+          keykeyAlias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_PASSWORD }}
           buildToolsVersion: 33.0.0
       - uses: actions/upload-artifact@v3
         with:
           name: release.aab
-          path:${{steps.sign_app.outputs.signedFile}}
+          path: ${{steps.sign_app.outputs.signedFile}}
       - uses: actions/upload-artifact@v3
         with:
           name: mapping.txt
